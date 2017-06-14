@@ -1,0 +1,107 @@
+/* @file inputs + selects
+-------------------------------------------------------------------- */
+.floraforms .flo-select .arrow { display:none; }
+.floraforms .flo-file .file-input{
+  filter:alpha(opacity=0);
+  cursor:pointer;
+  zoom: 1;
+}
+
+/* @checkbox + radio options 
+-------------------------------------------------------------------- */
+.floraforms .flo-checkbox:before, 
+.floraforms .flo-radio:before{  display: none;  }
+.floraforms .flo-option > .checked + .flo-checkbox:before, 
+.floraforms .flo-option > .checked + .flo-radio:before { display: block; }
+.floraforms .flo-option > .checked + .flo-checkbox, 
+.floraforms .flo-option > .checked + .flo-radio{ 
+	border: 3px solid #1ABC9C; 
+	background:#1ABC9C;
+}
+
+.floraforms .flo-option > .checked + .flo-checkbox:before{
+	content:'\f00c';
+	border:none;
+	font-family:'FontAwesome';
+	font-size:11px;
+	color:#fff;
+	top:2px;
+	left:2px;
+}
+
+.floraforms .flo-option > .checked + .flo-radio:before {
+    width: 9px;
+    height: 9px;
+    background: #fff;
+}
+
+/* @toggle switches 
+------------------------------------------------------------ */
+.floraforms .flo-switch > .checked + .switch-label,
+.floraforms .flo-switch > .checked:focus + .switch-label{ 
+	padding-left: 33px; 
+	background: #1ABC9C; 
+	border-color:#1ABC9C; 
+	color: white; 
+}
+
+.floraforms .flo-switch > .switch-label:before{ 
+	right:6px; 
+	text-align:right; 
+}
+
+.floraforms .flo-switch > .checked + .switch-label:before { 
+	content: attr(data-on);
+	text-align:left; 
+	left:5px;
+}
+
+/* @blue theme 
+-------------------------------------------------------------------- */ 
+.theme-blue .flo-option > .checked + .flo-radio,
+.theme-blue .flo-option > .checked + .flo-checkbox,
+.theme-blue .flo-switch > .checked + .switch-label,
+.theme-blue .flo-switch > .checked:focus + .switch-label{ 
+	border-color: #3498DB; 
+	background:#3498DB;
+}
+
+/* @red theme 
+-------------------------------------------------------------------- */ 
+.theme-red .flo-option > .checked + .flo-radio,
+.theme-red .flo-option > .checked + .flo-checkbox,
+.theme-red .flo-switch > .checked + .switch-label,
+.theme-red .flo-switch > .checked:focus + .switch-label{ 
+	border-color: #E74C3C; 
+	background:#E74C3C;
+}
+
+/* @purple theme 
+-------------------------------------------------------------------- */ 
+.theme-purple .flo-option > .checked + .flo-radio,
+.theme-purple .flo-option > .checked + .flo-checkbox,
+.theme-purple .flo-switch > .checked + .switch-label,
+.theme-purple .flo-switch > .checked:focus + .switch-label{ 
+	border-color: #9B59B6; 
+	background:#9B59B6;
+}
+
+/* @black theme 
+-------------------------------------------------------------------- */ 
+.theme-black .flo-option > .checked + .flo-radio,
+.theme-black .flo-option > .checked + .flo-checkbox,
+.theme-black .flo-switch > .checked + .switch-label,
+.theme-black .flo-switch > .checked:focus + .switch-label{ 
+	border-color: #34495E; 
+	background:#34495E;
+}
+
+/* @orange theme 
+-------------------------------------------------------------------- */ 
+.theme-orange .flo-option > .checked + .flo-radio,
+.theme-orange .flo-option > .checked + .flo-checkbox,
+.theme-orange .flo-switch > .checked + .switch-label,
+.theme-orange .flo-switch > .checked:focus + .switch-label{ 
+	border-color: #F39C12; 
+	background:#F39C12;
+}

@@ -1,0 +1,1269 @@
+@charset "utf-8";
+/* Roboto google font import 
+------------------------------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,500,500italic,300,300italic);
+
+/* @backgrounds :: modify or add yours below 
+------------------------------------------------------------------- */
+.florabg1{ background:rgba(255, 255, 255, 0.3); }
+.florabg2{ background:#E6CCA6; }
+
+/* @form wrappers 
+---------------------------------- */
+.flora-wrap{ padding:10px; }
+.floraforms, 
+.floraforms *{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.floraforms {
+	font-family:  Roboto, Arial, Helvetica, sans-serif;
+	line-height: 1.231;
+	font-weight: 400;
+	font-size: 14px;
+	color: #34495E;
+}
+
+.flora-container{
+	margin:0 auto;
+	background:#fff;	
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+	-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+	-o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+}
+
+/* @form container width 
+/* @if you want to change the form container width change the values below 
+/* @alternatively you can add yours eg .wrap4{ max-width:200px; } 
+---------------------------------------------------------------------------- */
+.wrap1{ max-width:100%; }
+.wrap2{ max-width:800px; }
+.wrap3{ max-width:700px; }
+.wrap4{ max-width:400px; }
+
+/* @form helper classes 
+--------------------------------------------------------------- */
+/*.floraforms .section{ margin-bottom:22px; }*/
+.floraforms .elem-group{ margin-bottom:5px; }
+
+/* @form label + field :: field class is useful for validation 
+---------------------------------------------------------------------- */
+.floraforms .flo-note{ display:block; padding:5px; font-size:11px; color:#999; }
+.floraforms .field{ display:block; position:relative; }
+.floraforms .field-icon i { color:#A2A6A8; position:relative; top:0; }
+.floraforms .field-label { display: block; margin-bottom: 7px; }
+.floraforms .field-label.colm{ padding-top:12px; }
+.floraforms .field-label em{ 
+	color:#e74c3c;
+	font-size:14px;
+	font-style:normal;
+	display:inline-block;
+	margin-left:4px;
+	position:relative; 
+	top:3px;  
+}
+
+/* @form header + footer sections 
+----------------------------------------- */
+.floraforms .frm-header,
+.floraforms .frm-footer {
+	overflow:hidden;
+	padding:0px 5px;
+	background:rgba(255, 255, 255, 0.3);
+}
+
+.floraforms .frm-header h4 { 
+	font-family:Roboto, Arial, Helvetica, sans-serif;
+	text-align:left;
+	font-size:24px;
+	font-weight:300; 
+	color:#6C82A2; 
+	padding:0;
+	margin:0;
+		 
+}
+
+/* @form body  
+------------------------------------------------------------ */	
+.floraforms .frm-body{ 
+	padding:5px;
+	padding-bottom:10px; 
+	/*border-top:1px solid #ddd; 
+	border-bottom:1px solid #ddd; */
+}
+
+
+/* @element general styling :: fonts :: adjust accordingly
+------------------------------------------------------------- */
+.floraforms :not(output):-moz-ui-invalid,
+.floraforms input:invalid { box-shadow: none; }
+.floraforms label, 
+.floraforms input,
+.floraforms button,
+.floraforms select,  
+.floraforms textarea {
+	margin: 0;  
+	font-size: 14px;
+	font-family:Roboto, Arial, Helvetica, sans-serif;
+	font-weight:400;
+	color: #34495E;
+	outline:none;
+}
+
+/* @remove browser specific styling
+----------------------------------------------- */
+.floraforms .flo-input,
+.floraforms .flo-textarea,
+.floraforms .flo-select > select,
+.floraforms input[type="button"],
+.floraforms input[type="submit"],
+.floraforms input[type="search"],
+.floraforms .flo-selectmulti select {
+	-webkit-tap-highlight-color:transparent;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);		
+	-webkit-border-radius:0px;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* @labels font-size styling :: adjust to fit your needs 
+--------------------------------------------------------- */
+.floraforms .flo-switch, 
+.floraforms .flo-option,
+.floraforms .field-label{ font-size:14px; }
+
+/* @prevent user selection for usability purposes
+----------------------------------------------------- */
+.floraforms .flo-radio,
+.floraforms .flo-button,  
+.floraforms .flo-checkbox,
+.floraforms .flo-switch > label{
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+/* @universal rules for all elements 
+---------------------------------------------------- */
+.floraforms .flo-radio,
+.floraforms .flo-button,
+.floraforms .flo-tooltip,
+.floraforms .flo-checkbox,  
+.floraforms .flo-input,
+.floraforms .flo-notification,
+.floraforms .flo-textarea,
+.floraforms .flo-select > select,
+.floraforms .flo-selectmulti select,
+.floraforms input[type="search"]{ 
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	transition:all 0.5s ease-in-out;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	-o-border-radius: 1px;
+	border-radius: 1px;
+	outline:none;
+}
+
+.floraforms .flo-select > select{
+	-webkit-transition:none;
+	-moz-transition:none;
+	-ms-transition:none;
+	-o-transition:none;
+	transition:none;
+}
+
+/* @control border-size :: color etc for these elements 
+----------------------------------------------------------- */
+.floraforms .flo-input,
+.floraforms .flo-select,
+.floraforms .flo-textarea,
+.floraforms .flo-select > select,
+.floraforms .flo-selectmulti select{
+	background: #fff;
+	position: relative;
+	vertical-align: top;
+	border: 1px solid #BDC3C7;
+	display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+	color: #34495E;
+	outline:none;
+	height: 42px;
+	width: 100%;
+	*zoom: 1;
+}
+
+/* @styling inputs and textareas 
+------------------------------------------- */
+.floraforms .flo-input, 
+.floraforms .flo-textarea { padding:10px; }
+.floraforms .flo-textarea {    
+    resize: none;
+	line-height: 19px;
+	overflow: auto;
+	max-width:100%;
+    height: 96px;
+}
+
+/* @hint below textareas 
+---------------------------------------- */
+.floraforms .flo-hint {
+    padding: 10px;
+	display: block;
+	margin-top: -4px;
+	line-height: 16px;
+	position: relative;    
+	background: #F2F4FA;
+    border: 2px solid #bdc3c7;
+	border-top:1px solid #bdc3c7;
+	font-family:Arial, Helvetica, sans-serif;
+    -webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	-o-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+    font-size: 11px;
+    color: #777;
+}
+
+/* @form selects :: dropdowns 
+-------------------------------------------------- */
+.floraforms .flo-select { border:0; z-index:10; }
+.floraforms .flo-select > select {
+	display: block;
+    padding:9px 10px; 
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+	outline:none;
+	text-indent: 0.01px;
+    text-overflow: ''; 
+	z-index:10;
+	margin: 0;	
+}
+
+.floraforms .flo-select > select::-ms-expand { display: none; }
+.floraforms .flo-select:before, 
+.floraforms .flo-select:after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+	z-index:15;
+}
+
+.floraforms .flo-select:before { 
+	top: 2px;
+	right: 2px;
+	width: 34px;
+	bottom: 2px;
+	background: #F2F4FA;
+	border-left:1px solid #d3dae7;
+	-webkit-border-radius: 0 1px 1px 0;
+	-moz-border-radius: 0 1px 1px 0;
+	-o-border-radius: 0 1px 1px 0;
+	border-radius: 0 1px 1px 0;
+}
+
+.floraforms .flo-select .arrow {
+	position: absolute;
+	top: 9px;
+	right: 5px;
+	width: 24px;
+	height: 24px;
+	background:#F2F4FA;
+	color:#B5C1C7;
+	pointer-events:none;
+	z-index:16;
+}
+
+.floraforms .flo-select .arrow:after,
+.floraforms .flo-select .arrow:before {
+	content: '';
+	position: absolute;
+	font:12px "Consolas", monospace;
+	font-style:normal;
+	pointer-events:none;
+	left:6px;
+}
+
+.floraforms .flo-select .arrow:before { content:'\25BC'; bottom:4px; }
+.floraforms .flo-select .double:after { content:'\25B2'; top:-1px;  }
+.floraforms .flo-select .double:before { content:'\25BC'; bottom:-1px; }
+.floraforms .flo-selectmulti select { 
+	width:100%; 
+	height: 123px;
+	padding: 10px;
+}
+
+/* @file inputs :: file uploaders 
+-------------------------------------------------------- */
+.floraforms .flo-file{ display:block; width:100%; }
+.floraforms .flo-file .file-input{
+	width:100%;
+	height:100%;
+	cursor:pointer;
+	padding:8px 10px;
+	position:absolute;
+	-moz-opacity:0;
+	opacity: 0;
+	z-index:11;
+	bottom:0;	
+	right:0;
+}
+
+.floraforms .flo-file .flo-button {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	float: none;
+	height: 34px;
+	line-height: 34px;
+	padding: 0 16px;
+	z-index:10;
+}
+
+
+/* @radio + checkbox option elements 
+----------------------------------------------------- */
+.floraforms .flo-option {
+    position: relative;	
+	padding-right:15px;    
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.floraforms .flo-option > input {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+	clip: rect(1px 1px 1px 1px); 
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;	
+    opacity: 0;
+	left: 0;
+}
+.floraforms .flo-checkbox, 
+.floraforms .flo-radio { 
+	position:relative;
+	margin-right:2px;
+	background: white;
+	display: inline-block;
+    border: 3px solid #B5C1C7;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px; 
+	-o-border-radius: 2px; 
+	border-radius: 2px;		
+	height: 21px;
+	width: 21px;
+	top:5px;	
+}
+
+.floraforms .flo-checkbox:before, 
+.floraforms .flo-radio:before {
+    content: '';
+    display: none;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-o-box-sizing: content-box;
+	box-sizing: content-box;
+	padding: 0;	
+	margin: 0; 		
+}
+
+
+.floraforms input:checked + .flo-checkbox:before, 
+.floraforms input:checked + .flo-radio:before {
+    display: block;
+}
+
+.floraforms .flo-checkbox:before {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 6px;
+    height: 3px;
+    border: solid #fff;
+    border-width: 0 0 3px 3px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.floraforms input:checked + .flo-checkbox, 
+.floraforms input:checked + .flo-radio{ 
+	border: 3px solid rgb(142,182,64); 
+	background:rgb(142,182,64); 
+}
+
+.floraforms .flo-radio { 
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px; 
+	-o-border-radius: 20px; 
+	border-radius: 20px;
+ 
+}
+.floraforms .flo-radio:before {
+    margin: 3px;
+    width: 9px;
+    height: 9px;
+    background: #fff;
+  	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px; 
+	-o-border-radius: 10px; 
+	border-radius: 10px;
+}
+
+/* @radio + checkbox :hover + :focus state 
+--------------------------------------------------- */
+.floraforms input:hover + .flo-radio,
+.floraforms input:hover + .flo-checkbox,
+.floraforms input:focus + .flo-checkbox, 
+.floraforms input:focus + .flo-radio{
+    border-color: rgb(142,182,64);
+}
+
+.floraforms input:focus + .flo-radio:before{ background: #fff; }
+.floraforms input:focus + .flo-checkbox:before{ border-color: #fff; }
+
+/* @toggle switch elements 
+-------------------------------------------------- */
+.floraforms .flo-switch {
+	cursor:pointer; 
+	position: relative; 
+	padding-right:10px;
+    display: inline-block;
+	margin-bottom:5px;
+	height: 26px;
+}
+
+.floraforms .flo-switch > .switch-label {
+	cursor:pointer;
+    display: inline-block;
+    position: relative;
+    height: 25px;
+	width: 58px;
+	color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+	line-height: 20px;
+    text-align: center;
+    background: #B5C1C7;
+    border: 2px solid #B5C1C7;
+	text-transform: uppercase;
+	font-family:Helvetica, Arial, sans-serif;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;	
+}
+.floraforms .flo-switch .switch-title{ 
+	display:inline-block; 
+	padding-left:5px; 
+	position:relative; 
+	top:-7px; 
+}
+.floraforms .flo-switch > .switch-label:before {
+    content: attr(data-off);
+    position: absolute;
+    top: 1px;
+    right: 3px;
+    width: 33px;
+}
+
+.floraforms .flo-switch > .switch-label:after {
+	content:"";	
+    margin: 1px;
+    width: 19px;
+    height: 19px;
+	display: block;
+    background: #fff;
+    -webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	-o-border-radius: 1px;
+	border-radius: 1px;
+}
+
+.floraforms .flo-switch > input {
+	-webkit-appearance: none;
+	position: absolute;
+    width: inherit;
+    height: inherit;
+	clip: rect(1px 1px 1px 1px); 
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;	
+    opacity: 0;
+	left: 0;
+	top: 0;
+   
+}
+
+/* @toggle switch focus state 
+-------------------------------------------------------------- */
+.floraforms .flo-switch > input:focus { outline: none; }
+.floraforms .flo-switch > input:focus + .switch-label { 
+	color: #fff; 
+	border-color: #a1a6a9; 
+	background:#a1a6a9; 
+}
+
+.floraforms .flo-switch > input:focus + .switch-label:after { background: #fff; }
+
+/* @toggle switch normal state 
+--------------------------------------------------------------- */
+.floraforms .flo-switch > input:checked + .switch-label {
+    border-color: rgb(142,182,64);
+	background: rgb(142,182,64); 
+	padding-left: 33px;
+	color: white;
+}
+
+.floraforms .flo-switch > input:checked + .switch-label:before {
+    content: attr(data-on);
+    left: 1px;
+	top:1px;
+}
+
+.floraforms .flo-switch > input:checked + .switch-label:after {
+    margin: 1px;
+    width: 19px;
+    height: 19px;
+    background: white;
+}
+
+/* @toggle switch normal state focus 
+--------------------------------------------------------------------------------- */
+.floraforms .flo-switch > input:checked:focus + .switch-label { 
+	background: #16a085; 
+	border-color: #16a085; 
+}
+
+/* @buttons 
+----------------------------------------------------- */
+.floraforms .flo-button {
+    border: 0;
+	height: 42px;
+	color: #243140;
+	line-height: 1;
+	font-size:15px; 
+    cursor: pointer;
+	padding: 0 18px;
+	text-align: center;
+	vertical-align: top;
+    background: #bdc3c7;
+	display: inline-block;
+	-webkit-user-drag: none;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.2);
+}
+
+/* @buttons :hover, :active states 
+---------------------------------------------------------------- */
+.floraforms .flo-button:hover { color: #243140; background: #cacfd2; }
+.floraforms .flo-button:active{ color: #1d2938; background: #a1a6a9; }
+.floraforms a.flo-button, 
+.floraforms span.flo-button, 
+.floraforms label.flo-button { line-height: 42px; text-decoration: none; }
+.floraforms .flo-button i{ font-size:14px; }
+.floraforms .flo-button-list .flo-button{ margin-bottom:5px; }
+
+/* @primary button theme
+-------------------------------------------- */
+.floraforms .btn-themed {  background-color: rgb(142,182,64);  }
+.floraforms .btn-themed:hover,
+.floraforms .btn-themed:focus { background-color: rgb(142,182,64); }
+.floraforms .btn-themed:active{ background-color: rgb(131,182,64); }
+.floraforms .btn-themed, 
+.floraforms .btn-themed:hover,
+.floraforms .btn-themed:focus, 
+.floraforms .btn-themed:active{
+	text-shadow: 0 1px rgba(0, 0, 0, 0.08);
+	color: #fff; 
+}
+
+
+/* @icon append (right) :: prepend (left)
+------------------------------------------------- */
+.floraforms .append-icon, 
+.floraforms .prepend-icon{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+	width:100%;
+}
+
+.floraforms .append-icon .field-icon, 
+.floraforms .prepend-icon .field-icon{
+	top:0;
+	z-index:1;
+	width:42px;
+	height:42px;
+	color: inherit;
+	line-height:42px;
+	position:absolute;
+	text-align: center;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    pointer-events: none;
+}
+
+.floraforms .append-icon .field-icon i, 
+.floraforms .prepend-icon .field-icon i{ 
+	position:relative;
+	font-size:14px;
+}
+
+.floraforms .prepend-icon .field-icon{ left:0;  }
+.floraforms .append-icon .field-icon{ right:0; }
+.floraforms .prepend-icon > input,
+.floraforms .prepend-icon > select, 
+.floraforms .prepend-icon > textarea{ padding-left:36px; }
+.floraforms .append-icon > input, 
+.floraforms .append-icon > textarea{ padding-right:36px; padding-left:10px;  }
+.floraforms .append-icon > textarea{ padding-right:36px; }
+.floraforms .flo-select .field-icon{ line-height:42px; z-index:99!important; }
+.floraforms .prepend-icon > select{ padding-left:30px;  }
+
+/* @tooltips on inputs + textareas 
+------------------------------------------------- */ 
+.floraforms .flo-tooltip {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	color: #fff;	
+	width: 184px;
+	left: -9999px;
+	top:auto;
+	font-size: 11px;
+	font-weight:normal;
+	background: #34495E;
+	-webkit-transition: margin 0.6s, opacity 0.6s;
+	-moz-transition: margin 0.6s, opacity 0.6s;
+	-ms-transition: margin 0.6s, opacity 0.6s;
+	-o-transition: margin 0.6s, opacity 0.6s;
+	transition: margin 0.6s, opacity 0.6s;
+}
+
+.floraforms .flo-tooltip > em{ padding:12px; font-style:normal; display:block; position:static; }
+.floraforms .flo-tooltip:after { content: ''; position: absolute; }
+.floraforms .flo-input:focus + .flo-tooltip, 
+.floraforms .flo-textarea:focus + .flo-tooltip,
+.floraforms .flo-select > select:focus ~ .flo-tooltip { opacity: 1; z-index: 9999; }
+
+/* @tooltip right-top
+------------------------------------------------- */
+.floraforms .tip-right { bottom: 100%; margin-bottom: -20px; }
+.floraforms .tip-right:after {
+	top: 100%;
+	right: 12px;
+	border-top: 8px solid #34495E;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+}
+
+.floraforms .flo-input:focus + .tip-right,
+.floraforms .flo-textarea:focus + .tip-right,
+.floraforms .flo-select > select:focus ~ .tip-right {
+	right: 0;
+	left: auto;
+	margin-bottom: 10px;
+}
+
+/* @tooltip left-top
+------------------------------------------------- */
+.floraforms .tip-left { bottom: 100%; margin-bottom: -20px; }
+.floraforms .tip-left:after {
+	top: 100%;
+	left: 12px;
+	border-top: 8px solid #34495E;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+}
+
+.floraforms .flo-input:focus + .tip-left,
+.floraforms .flo-textarea:focus + .tip-left,
+.floraforms .flo-select > select:focus ~ .tip-left {
+	left: 0;
+	right: auto;
+	margin-bottom: 10px;
+}
+
+/* @.flo-notification messages | info | error | warning | success
+-------------------------------------------------------------- */
+.floraforms .form-msg{ display:none; }
+.floraforms .flo-notification { color: #444; padding:15px; position:relative; margin-bottom:10px; }
+.floraforms .flo-notification p{ margin:0; padding:0 15px; padding-left:5px; line-height:normal;  }
+.floraforms .flo-notification .close-btn{
+	margin-top: -7px;
+	padding: inherit;
+	position: absolute;
+	text-decoration:none; 
+    font: bold 20px/20px Arial, sans-serif;
+	opacity: 0.65; 	
+	color: inherit;
+    display: block;    
+    right:1px;
+	top:14%;
+}
+
+.floraforms .flo-notification .close-btn:hover{ opacity: 1; }
+.floraforms .alert-info { color:#163161; background-color: #cfe6fc; }
+.floraforms .alert-success { color:#336633; background-color: #d2f7ad; }
+.floraforms .alert-warning { color: #CC6600; background-color: #fae7a2; }
+.floraforms .alert-error { color:#990000; background-color: #FBDBCF; }
+
+
+/* @form element :hover state 
+-------------------------------------------- */
+.floraforms .flo-input:hover,
+.floraforms .flo-textarea:hover,
+.floraforms .flo-select > select:hover,
+.floraforms .flo-selectmulti select:hover, 
+.floraforms .flo-input:hover ~ .flo-hint,
+.floraforms .flo-file .file-input:hover + .flo-input,
+.floraforms .flo-textarea:hover ~ .flo-hint{
+	border-color: #666666;
+}
+
+
+/* @form element :focus state 
+-------------------------------------------------------- */
+.floraforms .flo-input:focus,
+.floraforms .flo-textarea:focus,
+.floraforms .flo-select > select:focus,
+.floraforms .flo-selectmulti select:focus{ border-color: rgb(142,182,64); color: #3C3C3C; }
+.floraforms .flo-textarea:focus{  height: 120px; }
+.floraforms .flo-select > select:focus { z-index:10; z-index:20\9; }
+.floraforms .flo-input:focus ~ .field-icon i,
+.floraforms .flo-textarea:focus ~ .field-icon i{ color:rgb(142,182,64); }
+.floraforms .flo-selectmulti select:focus, 
+.floraforms .flo-input:focus ~ .flo-hint,
+.floraforms .flo-textarea:focus ~ .flo-hint, 
+.floraforms .flo-file .file-input:focus + .flo-input{ border-color: rgb(142,182,64); }
+.floraforms .flo-select > select:focus + .arrow{ color:rgb(142,182,64); }
+
+/* @blue theme elements
+---------------------------------------------------------------------- */
+.theme-blue .flo-input:hover,
+.theme-blue .flo-textarea:hover,
+.theme-blue .flo-select > select:hover,
+.theme-blue .flo-selectmulti select:hover, 
+.theme-blue .flo-input:hover ~ .flo-hint,
+.theme-blue .flo-file .file-input:hover + .flo-input,
+.theme-blue .flo-textarea:hover ~ .flo-hint{
+	border-color: #6FB6E6;
+}
+
+.theme-blue .flo-input:focus,
+.theme-blue .flo-textarea:focus,
+.theme-blue .flo-select > select:focus,
+.theme-blue .flo-selectmulti select:focus{ border-color: #3498DB; color: #3C3C3C; }
+.theme-blue .flo-input:focus ~ .field-icon i,
+.theme-blue .flo-textarea:focus ~ .field-icon i{ color:#3498DB; }
+.theme-blue .flo-selectmulti select:focus, 
+.theme-blue .flo-input:focus ~ .flo-hint,
+.theme-blue .flo-textarea:focus ~ .flo-hint, 
+.theme-blue .flo-file .file-input:focus + .flo-input{ border-color:#3498DB; }
+.theme-blue .flo-select > select:focus + .arrow{ color:#3498DB; }
+
+/* @blue theme buttons 
+-------------------------------------------------------------------- */
+.theme-blue .btn-themed {  background-color: #3498DB;  }
+.theme-blue .btn-themed:hover,
+.theme-blue .btn-themed:focus,
+.theme-blue .btn-themed:active { background-color: #2980B9; }
+
+/* @blue theme checkboxes + radios 
+-------------------------------------------------------------------- */
+.theme-blue input:checked + .flo-checkbox, 
+.theme-blue input:checked + .flo-radio{  border: 3px solid #3498DB; background:#3498DB;  } 
+.theme-blue input:hover + .flo-radio,
+.theme-blue input:hover + .flo-checkbox,
+.theme-blue input:focus + .flo-checkbox, 
+.theme-blue input:focus + .flo-radio{ border-color: #3498DB; }
+
+/* @blue theme switches
+-------------------------------------------------------------------- */
+.theme-blue .flo-switch > input:checked + .switch-label { border-color:#3498DB; background:#3498DB; }
+.theme-blue .flo-switch > input:checked:focus + .switch-label {  background:#2980B9; border-color:#2980B9; }
+
+/* @red theme elements
+---------------------------------------------------------------------- */
+.theme-red .flo-input:hover,
+.theme-red .flo-textarea:hover,
+.theme-red .flo-select > select:hover,
+.theme-red .flo-selectmulti select:hover, 
+.theme-red .flo-input:hover ~ .flo-hint,
+.theme-red .flo-file .file-input:hover + .flo-input,
+.theme-red .flo-textarea:hover ~ .flo-hint{
+	border-color: #E95B4B;
+}
+
+.theme-red .flo-input:focus,
+.theme-red .flo-textarea:focus,
+.theme-red .flo-select > select:focus,
+.theme-red .flo-selectmulti select:focus{ border-color: #E74C3C; color: #3C3C3C; }
+.theme-red .flo-input:focus ~ .field-icon i,
+.theme-red .flo-textarea:focus ~ .field-icon i{ color:#E74C3C; }
+.theme-red .flo-selectmulti select:focus, 
+.theme-red .flo-input:focus ~ .flo-hint,
+.theme-red .flo-textarea:focus ~ .flo-hint, 
+.theme-red .flo-file .file-input:focus + .flo-input{ border-color:#E74C3C; }
+.theme-red .flo-select > select:focus + .arrow{ color:#E74C3C; }
+
+/* @red theme buttons 
+-------------------------------------------------------------------- */
+.theme-red .btn-themed {  background-color: #E74C3C;  }
+.theme-red .btn-themed:hover,
+.theme-red .btn-themed:focus,
+.theme-red .btn-themed:active { background-color: #C0392B; }
+
+/* @red theme checkboxes + radios 
+-------------------------------------------------------------------- */
+.theme-red input:checked + .flo-checkbox, 
+.theme-red input:checked + .flo-radio{  border: 3px solid #E74C3C; background:#E74C3C;  } 
+.theme-red input:hover + .flo-radio,
+.theme-red input:hover + .flo-checkbox,
+.theme-red input:focus + .flo-checkbox, 
+.theme-red input:focus + .flo-radio{ border-color: #E74C3C; }
+
+/* @red theme switches
+-------------------------------------------------------------------- */
+.theme-red .flo-switch > input:checked + .switch-label { border-color:#E74C3C; background:#E74C3C; }
+.theme-red .flo-switch > input:checked:focus + .switch-label {  background:#C0392B; border-color:#C0392B; }
+
+/* @purple theme elements
+---------------------------------------------------------------------- */
+.theme-purple .flo-input:hover,
+.theme-purple .flo-textarea:hover,
+.theme-purple .flo-select > select:hover,
+.theme-purple .flo-selectmulti select:hover, 
+.theme-purple .flo-input:hover ~ .flo-hint,
+.theme-purple .flo-file .file-input:hover + .flo-input,
+.theme-purple .flo-textarea:hover ~ .flo-hint{
+	border-color: #AA73C1;
+}
+
+.theme-purple .flo-input:focus,
+.theme-purple .flo-textarea:focus,
+.theme-purple .flo-select > select:focus,
+.theme-purple .flo-selectmulti select:focus{ border-color: #9B59B6; color: #3C3C3C; }
+.theme-purple .flo-input:focus ~ .field-icon i,
+.theme-purple .flo-textarea:focus ~ .field-icon i{ color:#9B59B6; }
+.theme-purple .flo-selectmulti select:focus, 
+.theme-purple .flo-input:focus ~ .flo-hint,
+.theme-purple .flo-textarea:focus ~ .flo-hint, 
+.theme-purple .flo-file .file-input:focus + .flo-input{ border-color:#9B59B6; }
+.theme-purple .flo-select > select:focus + .arrow{ color:#9B59B6; }
+
+/* @purple theme buttons 
+-------------------------------------------------------------------- */
+.theme-purple .btn-themed {  background-color: #9B59B6;  }
+.theme-purple .btn-themed:hover,
+.theme-purple .btn-themed:focus,
+.theme-purple .btn-themed:active { background-color: #8E44AD; }
+
+/* @purple theme checkboxes + radios 
+-------------------------------------------------------------------- */
+.theme-purple input:checked + .flo-checkbox, 
+.theme-purple input:checked + .flo-radio{  border: 3px solid #9B59B6; background:#9B59B6;  } 
+.theme-purple input:hover + .flo-radio,
+.theme-purple input:hover + .flo-checkbox,
+.theme-purple input:focus + .flo-checkbox, 
+.theme-purple input:focus + .flo-radio{ border-color: #9B59B6; }
+
+/* @purple theme switches
+-------------------------------------------------------------------- */
+.theme-purple .flo-switch > input:checked + .switch-label { border-color:#9B59B6; background:#9B59B6; }
+.theme-purple .flo-switch > input:checked:focus + .switch-label {  background:#8E44AD; border-color:#8E44AD; }
+
+/* @black theme elements
+---------------------------------------------------------------------- */
+.theme-black .flo-input:hover,
+.theme-black .flo-textarea:hover,
+.theme-black .flo-select > select:hover,
+.theme-black .flo-selectmulti select:hover, 
+.theme-black .flo-input:hover ~ .flo-hint,
+.theme-black .flo-file .file-input:hover + .flo-input,
+.theme-black .flo-textarea:hover ~ .flo-hint{
+	border-color: #3E5771;
+}
+
+.theme-black .flo-input:focus,
+.theme-black .flo-textarea:focus,
+.theme-black .flo-select > select:focus,
+.theme-black .flo-selectmulti select:focus{ border-color: #34495E; color: #3C3C3C; }
+.theme-black .flo-input:focus ~ .field-icon i,
+.theme-black .flo-textarea:focus ~ .field-icon i{ color:#34495E; }
+.theme-black .flo-selectmulti select:focus, 
+.theme-black .flo-input:focus ~ .flo-hint,
+.theme-black .flo-textarea:focus ~ .flo-hint, 
+.theme-black .flo-file .file-input:focus + .flo-input{ border-color:#34495E; }
+.theme-black .flo-select > select:focus + .arrow{ color:#34495E; }
+
+/* @black theme buttons 
+-------------------------------------------------------------------- */
+.theme-black .btn-themed {  background-color: #34495E;  }
+.theme-black .btn-themed:hover,
+.theme-black .btn-themed:focus,
+.theme-black .btn-themed:active { background-color: #2C3E50; }
+
+/* @black theme checkboxes + radios 
+-------------------------------------------------------------------- */
+.theme-black input:checked + .flo-checkbox, 
+.theme-black input:checked + .flo-radio{  border: 3px solid #34495E; background:#34495E;  } 
+.theme-black input:hover + .flo-radio,
+.theme-black input:hover + .flo-checkbox,
+.theme-black input:focus + .flo-checkbox, 
+.theme-black input:focus + .flo-radio{ border-color: #34495E; }
+
+/* @black theme switches
+-------------------------------------------------------------------- */
+.theme-black .flo-switch > input:checked + .switch-label { border-color:#34495E; background:#34495E; }
+.theme-black .flo-switch > input:checked:focus + .switch-label {  background:#2C3E50; border-color:#2C3E50; }
+
+/* @orange theme elements
+---------------------------------------------------------------------- */
+.theme-orange .flo-input:hover,
+.theme-orange .flo-textarea:hover,
+.theme-orange .flo-select > select:hover,
+.theme-orange .flo-selectmulti select:hover, 
+.theme-orange .flo-input:hover ~ .flo-hint,
+.theme-orange .flo-file .file-input:hover + .flo-input,
+.theme-orange .flo-textarea:hover ~ .flo-hint{
+	border-color: #F1C40F;
+}
+
+.theme-orange .flo-input:focus,
+.theme-orange .flo-textarea:focus,
+.theme-orange .flo-select > select:focus,
+.theme-orange .flo-selectmulti select:focus{ border-color: #F39C12; color: #3C3C3C; }
+.theme-orange .flo-input:focus ~ .field-icon i,
+.theme-orange .flo-textarea:focus ~ .field-icon i{ color:#F39C12; }
+.theme-orange .flo-selectmulti select:focus, 
+.theme-orange .flo-input:focus ~ .flo-hint,
+.theme-orange .flo-textarea:focus ~ .flo-hint, 
+.theme-orange .flo-file .file-input:focus + .flo-input{ border-color:#F39C12; }
+.theme-orange .flo-select > select:focus + .arrow{ color:#F39C12; }
+
+/* @orange theme buttons 
+-------------------------------------------------------------------- */
+.theme-orange .btn-themed {  background-color: #F39C12;  }
+.theme-orange .btn-themed:hover,
+.theme-orange .btn-themed:focus,
+.theme-orange .btn-themed:active { background-color: #E67E22; }
+
+/* @orange theme checkboxes + radios 
+-------------------------------------------------------------------- */
+.theme-orange input:checked + .flo-checkbox, 
+.theme-orange input:checked + .flo-radio{  border: 3px solid #F39C12; background:#F39C12;  } 
+.theme-orange input:hover + .flo-radio,
+.theme-orange input:hover + .flo-checkbox,
+.theme-orange input:focus + .flo-checkbox, 
+.theme-orange input:focus + .flo-radio{ border-color: #F39C12; }
+
+/* @orange theme switches
+-------------------------------------------------------------------- */
+.theme-orange .flo-switch > input:checked + .switch-label { border-color:#F39C12; background:#F39C12; }
+.theme-orange .flo-switch > input:checked:focus + .switch-label {  background:#E67E22; border-color:#E67E22; }
+
+
+
+/* @validaion - error state
+------------------------------------- */
+.floraforms .state-error .flo-input,
+.floraforms .state-error .flo-textarea,
+.floraforms .state-error.flo-select > select,
+.floraforms .state-error.flo-selectmulti > select,
+.floraforms .state-error input:hover + .flo-checkbox, 
+.floraforms .state-error input:hover + .flo-radio,
+.floraforms .state-error input:focus + .flo-checkbox, 
+.floraforms .state-error input:focus + .flo-radio,
+.floraforms .state-error .flo-checkbox, 
+.floraforms .state-error .flo-radio{
+	background:#FEEFE9;
+	border-color:#E46B66;
+}
+
+.floraforms .state-error .flo-input ~ .field-icon i,
+.floraforms .state-error .flo-textarea ~ .field-icon i{  color: #e74c3c; }
+.floraforms .state-error.flo-select .arrow { color: #e74c3c; }
+.floraforms .state-error.flo-select:before {  border-left:1px solid #E46B66; }
+.floraforms .state-error .flo-input ~ .flo-hint,
+.floraforms .state-error.flo-file .file-input:hover + .flo-input, 
+.floraforms .state-error .flo-textarea ~ .flo-hint { border-color:#E46B66; }
+.floraforms .state-error + em{ 
+	display: block!important;
+	margin-top: 6px;
+	padding: 0 3px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style: normal;
+	line-height: normal;
+	color:#CC0000;
+	font-size:0.85em;
+  
+}
+
+/* @validaion - success state 
+-------------------------------------------------- */
+.floraforms .state-success .flo-input,
+.floraforms .state-success .flo-textarea,
+.floraforms .state-success.flo-select > select,
+.floraforms .state-success.flo-selectmulti > select{
+	background:#EAFCD8;
+	border-color:#2ecc71;
+}
+
+
+.floraforms .state-success .flo-input ~ .field-icon i,
+.floraforms .state-success .flo-textarea ~ .field-icon i{  color: #2ecc71; }
+.floraforms .state-success.flo-select .arrow { color: #2ecc71; }
+.floraforms .state-success.flo-select:before {  border-left:1px solid #2ecc71; }
+.floraforms .state-success .flo-input ~ .flo-hint,
+.floraforms .state-success.flo-file .file-input:hover + .flo-input, 
+.floraforms .state-success .flo-textarea ~ .flo-hint { border-color:#2ecc71; }
+
+
+/* @disabled state 
+----------------------------------------------- */
+.floraforms .flo-button[disabled],
+.floraforms .state-disabled .flo-button,
+.floraforms input[disabled] + .flo-radio,
+.floraforms input[disabled] + .flo-checkbox,
+.floraforms .flo-switch > input[disabled] + label{
+	cursor: default;
+	opacity:0.5;
+}
+
+.floraforms .flo-input[disabled],
+.floraforms .flo-textarea[disabled], 
+.floraforms .flo-select > select[disabled], 
+.floraforms .flo-selectmulti select[disabled],
+.floraforms .flo-input[disabled] ~ .flo-hint,
+.floraforms .flo-file .file-input[disabled] + .flo-input,
+.floraforms .flo-file .file-input[disabled]:hover + .flo-input, 
+.floraforms .flo-textarea[disabled] ~ .flo-hint {    
+  background-color: #f4f6f6;
+  border-color: #d5dbdb!important;
+  cursor: default;
+  color: #d5dbdb;
+  opacity:0.7;
+}
+
+.floraforms input[disabled] ~ .field-icon i,
+.floraforms textarea[disabled] ~ .field-icon i,
+.floraforms .flo-select > select[disabled] + .arrow{ 
+	opacity:0.4; 
+}
+
+/* @progress bars 
+------------------------------------------------------*/
+.floraforms .flo-progress{ display:none; }
+.floraforms .flo-ui .flo-progressbar { margin-bottom:5px; }
+.floraforms .flo-progressbar {
+    position: relative;
+    background: #EDF0F8;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.floraforms .flo-progressbar .percent { 
+	position:absolute; 
+	display:inline-block; 
+	top:-3px; 
+	right:-24px; 
+	font-size:9px; 
+	color:#93A2AA; 
+}
+.floraforms .flo-progressbar > .bar {   
+	width:60%; 
+	height:7px;
+	display: block;
+	background-size: 16px 16px;	
+	background-color: #bdc3c7; 
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+
+
+/* @progress bar themes
+----------------------------------------------------------- */
+.floraforms .bar-green > .bar { background-color: rgb(142,182,64); }
+.floraforms .bar-blue > .bar     { background-color: #3498db; }
+.floraforms .bar-black > .bar    { background-color: #34495e; }
+.floraforms .bar-purple > .bar   { background-color: #9B59B6; }
+.floraforms .bar-red > .bar      { background-color: #e74c3c; }
+.floraforms .bar-orange > .bar   { background-color: #ed9c28; }
+
+/* @progress bar strips + animation IE10+ 
+----------------------------------------------------------- */
+.floraforms .elemprogress > button[type="submit"]:hover,
+.floraforms .elemprogress > button[type="submit"],
+.floraforms .flo-progressbar > .bar {
+    background-size: 16px 16px;
+    background-image: -webkit-linear-gradient(top left,  
+					  transparent, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, 
+					  transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+					  
+    background-image: -moz-linear-gradient(top left,  
+					  transparent, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, 
+					  transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+					  
+    background-image: -o-linear-gradient(top left,  
+					  transparent, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, 
+					  transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+					  
+    background-image: linear-gradient(to bottom right,  
+					  transparent, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, 
+					  transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+}
+
+.floraforms .elemprogress > button[type="submit"], 
+.floraforms .elemprogress > button[type="submit"]:hover,  
+.floraforms .progress-animated > .bar{
+	-webkit-animation: floprogress .6s linear infinite;
+	-moz-animation: floprogress .6s linear infinite;
+	-o-animation: floprogress .6s linear infinite;
+    animation: floprogress .6s linear infinite;
+}
+
+.floraforms .elemprogress > button[type="submit"]:hover{ cursor:wait; }
+
+@-webkit-keyframes floprogress {
+    from { background-position: 0 0; }
+	to { background-position: -16px 0; }
+}
+
+
+@-moz-keyframes floprogress {
+	from { background-position: 0 0; }
+	to { background-position: -16px 0; }
+}
+
+@-o-keyframes floprogress {
+	from { background-position: 0 0; }
+	to { background-position: -16px 0; }
+}
+
+@keyframes floprogress {
+    from { background-position: 0 0; }
+	to { background-position: -16px 0; }
+}
+
+
+
+
+/* @form block elements
+----------------------------------- */ 
+.floraforms .block{ display:block; }
+
+/* @form grid rows 
+--------------------------------- */
+.floraforms .frm-row{ margin:0 -10px;  }
+.floraforms .frm-row:before,
+.floraforms .frm-row:after { display: table; content: ""; line-height: 0; } 
+.floraforms .frm-row:after{ clear: both; }
+
+/* @form columns 
+----------------------------------- */
+.floraforms .frm-row .colm{ 
+	min-height:1px; 
+	padding-left:10px; 
+	padding-right:10px; 
+	position:relative; 
+	float:left; 
+}
+
+.floraforms .frm-row .colm1{width:8.33%;}
+.floraforms .frm-row .colm2{width:16.66%;}
+.floraforms .frm-row .colm3{width:25%;}
+.floraforms .frm-row .colm4{width:33.33%;}
+.floraforms .frm-row .colm5{width:41.66%;}
+.floraforms .frm-row .colm6{width:50%;}
+.floraforms .frm-row .colm7{width:58.33%;}
+.floraforms .frm-row .colm8{width:66.66%;}
+.floraforms .frm-row .colm9{width:75%;}
+.floraforms .frm-row .colm10{width:83.33%;}
+.floraforms .frm-row .colm11{width:91.66%;}
+.floraforms .frm-row .colm12{width:100%; }
+.floraforms .frm-row .colm1-5{width:20%;}
+.floraforms .frm-row .colm1-8{width:12.5%;}
+
+/* @element alignment
+-------------------------------------------------- */
+.floraforms .align-right{ text-align:right; }
+.floraforms .align-center{ text-align:center; }
+
+/* @captcha + reload button
+-------------------------------------------------- */
+.floraforms .flo-captcha{ position:relative; padding-right:130px; }
+.floraforms .flo-captcha .flo-input{
+    -webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	-o-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+}
+.floraforms .captcode{
+	height: 42px;
+	cursor:pointer;
+	position: absolute;
+	background:#F2F4FA;
+	border: 2px solid #BDC3C7;
+    -webkit-border-radius: 0 3px 3px 0;
+	-moz-border-radius: 0 3px 3px 0;
+	-o-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+	display:inline-block;
+	line-height: 42px;	
+	padding:0 30px;
+	border-left:0;
+	width:130px;
+	right:0;
+	top:0;
+}
+.floraforms .captcode img{ position:relative; }
+.floraforms .refresh-captcha{  position:absolute; right:14px; top:0; }
+.floraforms .refresh-captcha i{ font-size:17px; color: #777; }
+
+/* @Fix old of versions android + ios
+------------------------------------------------------------- */
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+        .floraforms .flo-option,
+        .floraforms .flo-switch, 
+		.floraforms .captcode { -webkit-animation: bugfix infinite 1s; }
+        @-webkit-keyframes bugfix { 
+            from { padding: 0;  } 
+            to { padding: 0; } 
+        }
+		.floraforms .flo-switch { margin-right:10px;  margin-bottom:5px; }
+		.floraforms .flo-option { margin-right:15px; }					
+}
+
+
+/* @responsiveness for tablets + smart mobile 
+-------------------------------------------------- */
+@media (max-width: 600px) {
+	.floraforms .frm-row{ margin:0;  }
+	.floraforms .frm-row .colm{  width: 100%; float:none; padding:0; }
+	.floraforms .align-right{ text-align: left; }
+}
